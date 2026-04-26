@@ -1,34 +1,49 @@
 alembic==1.13.0
-azure-common==1.1.24
+azure-common==1.1.28
 azure-nspkg==3.0.2
 azure-storage==0.36.0
-certifi==2019.11.28
+
+certifi==2023.7.22
 cffi==1.16.0
 chardet==3.0.4
-Click==7.1.2
-cryptography==2.8
+
+Click==8.1.7
+
+cryptography>=41.0.0   # 🔥 VERY IMPORTANT (was 2.8)
+
 Flask==2.2.5
-Flask-Login==0.5.0
-Flask-Session==0.4.0
+Flask-Login==0.6.3     # 🔥 updated
+Flask-Session==0.5.0   # 🔥 updated
 Flask-SQLAlchemy==2.5.1
-Flask-WTF==0.14.3
-idna==2.8
-itsdangerous==2.0.1
-Jinja2==3.0.1
+Flask-WTF==1.1.1       # 🔥 updated
+
+idna==3.4
+itsdangerous==2.1.2    # 🔥 updated
+Jinja2==3.1.3          # 🔥 updated
 Mako==1.3.1
-MarkupSafe==2.0.1
-msal==1.13.0
-pip==10.0.1
+MarkupSafe==2.1.5      # 🔥 updated
+
+msal==1.28.0           # 🔥 updated
+
+pip>=23.0              # 🔥 VERY IMPORTANT (was 10.0.1)
+
 pycparser==2.20
 pyodbc==5.2.0
-pyopenssl==19.1.0
-python-dateutil==2.8.1
+pyopenssl>=23.2.0      # 🔥 updated
+
+python-dateutil==2.8.2
 python-editor==1.0.4
-pyparsing>=3.0.9
+
+pyparsing>=3.0.9       # already correct ✔
+
 requests==2.31.0
-setuptools<66
-six==1.14.0
+
+setuptools<66          # keep this ✔
+
+six==1.16.0
+
 SQLAlchemy==1.4.49
 urllib3==1.26.18
+
 Werkzeug==2.2.3
-WTForms==2.2.1
+WTForms==3.0.1         # 🔥 updated
