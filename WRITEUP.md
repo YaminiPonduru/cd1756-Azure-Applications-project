@@ -67,3 +67,11 @@ Chosen Solution: Azure App Service
 4. Justification
 
 Azure App Service is the most suitable option for deploying the CMS application because it simplifies deployment and reduces operational overhead. It provides built-in scalability, high availability, and seamless integration with GitHub for continuous deployment. Additionally, it supports secure environment variables for managing sensitive data such as database credentials and API keys. Compared to Virtual Machines, App Service allows faster development, easier maintenance, and better resource management, making it the ideal choice for this application.
+
+------------------------------------
+Assess app changes that would change your decision.
+
+Since Azure App Service is used, the application is modified to rely on environment variables for configuration and to follow a stateless design suitable for scalable cloud deployment. This removes the need to manage underlying infrastructure while ensuring easy integration with services like Azure SQL and Blob Storage. If more infrastructure control were required (as in a VM), additional setup such as server configuration, dependency management, and security handling would be necessary.
+
+
+
