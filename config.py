@@ -28,8 +28,10 @@ class Config(object):
     # if not CLIENT_SECRET:
     #     raise ValueError("Need to define CLIENT_SECRET environment variable")
 
-    AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
-    # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
+    #AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
+    #AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
+    TENANT_ID = os.environ.get("TENANT_ID")
+    AUTHORITY = f"https://login.microsoftonline.com/{TENANT_ID}"
 
     CLIENT_ID = os.environ.get("CLIENT_ID")
 
